@@ -1,7 +1,100 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import ImageSlider from '@/components/ImageSlider'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About AzuLong Industrial Fasteners - 15+ Years Manufacturing Excellence',
+  description: 'Established in 2009, AzuLong Industrial Fasteners is ISO 9001:2015 certified manufacturer specializing in excavator track bolts, plow bolts and bucket teeth. Trusted by North American construction equipment distributors with reliable quality and excellent service.',
+  keywords: 'about azulong, fastener manufacturer, excavator parts company, industrial fasteners factory, ISO 9001 certified, construction equipment parts supplier, track bolt manufacturer history',
+  openGraph: {
+    title: 'About AzuLong Industrial Fasteners - Manufacturing Excellence Since 2009',
+    description: 'ISO 9001:2015 certified manufacturer with 15+ years experience in excavator track bolts, plow bolts and bucket teeth. Trusted by North American distributors.',
+    images: [{
+      url: '/images/1.JPG',
+      width: 1200,
+      height: 630,
+      alt: 'AzuLong Manufacturing Facility'
+    }],
+    url: 'https://azulongparts.com/about'
+  }
+}
 
 export default function About() {
+  const companyImages = [
+    {
+      src: "/images/1.JPG",
+      alt: "AzuLong Manufacturing Facility",
+      title: "Manufacturing Excellence",
+      description: "Our state-of-the-art manufacturing facility"
+    },
+    {
+      src: "/images/2.JPG",
+      alt: "Production Workshop",
+      title: "Production Workshop",
+      description: "Advanced production capabilities"
+    },
+    {
+      src: "/images/3.JPG",
+      alt: "Quality Control",
+      title: "Quality Assurance",
+      description: "Rigorous quality control processes"
+    },
+    {
+      src: "/images/4.JPG",
+      alt: "Manufacturing Equipment",
+      title: "Advanced Equipment",
+      description: "Modern manufacturing technology"
+    },
+    {
+      src: "/images/5.JPG",
+      alt: "Factory Floor",
+      title: "Factory Operations",
+      description: "Efficient factory operations"
+    },
+    {
+      src: "/images/6.JPG",
+      alt: "Assembly Line",
+      title: "Assembly Process",
+      description: "Precision assembly operations"
+    },
+    {
+      src: "/images/7.JPG",
+      alt: "Warehouse Storage",
+      title: "Storage Facility",
+      description: "Organized warehouse operations"
+    },
+    {
+      src: "/images/8.JPG",
+      alt: "Testing Laboratory",
+      title: "Testing Lab",
+      description: "Comprehensive testing facilities"
+    },
+    {
+      src: "/images/9.JPG",
+      alt: "Packaging Department",
+      title: "Packaging",
+      description: "Professional packaging operations"
+    },
+    {
+      src: "/images/10.JPG",
+      alt: "Shipping Area",
+      title: "Logistics",
+      description: "Efficient shipping operations"
+    },
+    {
+      src: "/images/11.JPG",
+      alt: "Team Meeting",
+      title: "Our Team",
+      description: "Dedicated professional team"
+    },
+    {
+      src: "/images/12.JPG",
+      alt: "Company Overview",
+      title: "AzuLong Overview",
+      description: "Complete manufacturing solutions"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -22,7 +115,7 @@ export default function About() {
               Company Overview
             </h2>
             <p className="text-neutral-600 leading-relaxed mb-6">
-              Founded in 2008 and headquartered in Ningbo, Zhejiang, AzuLong has been specializing in the manufacturing of industrial fasteners for over 15 years. Today, we operate two production facilities located in Ningbo and Fujian, ensuring reliable capacity and consistent quality.
+              Founded in 2008 and headquartered in Ningbo, Zhejiang, AzuLong has been specializing in the manufacturing of industrial fasteners for over 15 years, ensuring reliable capacity and consistent quality.
             </p>
             <p className="text-neutral-600 leading-relaxed">
               Our products are supplied worldwide to component distributors and OEM manufacturers. We value long-term, win-win cooperation, and many of our global partners have been working with us for years. We are especially focused on the North American market, where our stable supply and responsive service have built strong trust.
@@ -55,33 +148,13 @@ export default function About() {
           </div>
         </div>
 
-        {/* Our Headquarters */}
+        {/* Company Gallery */}
         <div className="mb-16">
           <h2 className="text-3xl font-semibold text-neutral-900 text-center mb-12">
-            Our Headquarters
+            Our Manufacturing Facilities
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-              <div className="aspect-w-16 aspect-h-10">
-                <Image
-                  src="/office-building.jpg"
-                  alt="AzuLong headquarters in Ningbo"
-                  width={800}
-                  height={500}
-                  className="w-full h-96 object-cover"
-                />
-              </div>
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
-                  AzuLong Headquarters - Ningbo, China
-                </h3>
-                <p className="text-neutral-600 leading-relaxed max-w-2xl mx-auto">
-                  Our modern headquarters located in Ningbo city center represents our commitment to professional excellence.
-                  This strategic location enables us to efficiently coordinate our global operations while maintaining close
-                  relationships with our manufacturing facilities and international partners.
-                </p>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <ImageSlider images={companyImages} autoPlay={true} interval={4000} />
           </div>
         </div>
 

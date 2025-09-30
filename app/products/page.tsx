@@ -1,236 +1,286 @@
-import Image from 'next/image'
-import Link from 'next/link'
+﻿'use client';
 
-export default function Products() {
+import Link from 'next/link';
+import Image from 'next/image';
+import ProductsStructuredData from '@/components/ProductsStructuredData';
+
+// Featured products sourced from supplied photography
+const featuredProducts = [
+  {
+    sku: 'PB-3/4-4-CATALOG',
+    name: 'Plow Bolt 3/4" x 4"',
+    category: 'Plow Bolt',
+    standard: 'ASTM A449',
+    oem: 'BOSS, Western, CAT compatible',
+    diameter: '3/4"',
+    length: '4"',
+    material: 'Alloy Steel',
+    finish: 'Black Oxide',
+    image: 'plow-bolt-3-4.jpg',
+    description: 'Heavy-duty plow bolt built for snow plows and ground-engaging equipment.',
+  },
+  {
+    sku: 'PB-5/8-6-CATALOG',
+    name: 'Plow Bolt 5/8" x 6"',
+    category: 'Plow Bolt',
+    standard: 'ASTM A449',
+    oem: 'BOSS, Western, Fisher compatible',
+    diameter: '5/8"',
+    length: '6"',
+    material: 'Alloy Steel',
+    finish: 'Black Oxide',
+    image: 'plow-bolt-5-8.jpg',
+    description: 'Standard plow bolt used across leading snow plow assemblies.',
+  },
+  {
+    sku: 'TB-1-6-CATALOG',
+    name: 'Track Bolt 1" x 6"',
+    category: 'Track Bolt',
+    standard: 'ASTM A490',
+    oem: 'CAT, Komatsu, John Deere compatible',
+    diameter: '1"',
+    length: '6"',
+    material: 'Alloy Steel',
+    finish: 'Black Oxide',
+    image: 'track-bolt-1inch.jpg',
+    description: 'Track bolt engineered for excavators and tracked undercarriage systems.',
+  },
+];
+
+// Core Bolt Products - Our Specialty
+const boltProducts = [
+  {
+    href: '/products/track-bolt',
+    label: 'Track Bolt',
+    description: 'Undercarriage fasteners for crawler equipment & mining machinery',
+    specifications: 'Dia. 1/2" - 1-3/8" | US Standards | 65+ Part Numbers',
+    applications: 'CAT, Komatsu, John Deere Compatible',
+    image: '/images/products/track-bolt.svg',
+  },
+  {
+    href: '/products/plow-bolt',
+    label: 'Plow Bolt',
+    description: 'Countersunk bolts for ground engaging tools & snow plows',
+    specifications: 'Dia. 1/2" - 1-3/8" | US Standards | 65+ Part Numbers',
+    applications: 'BOSS, Western, CAT Compatible',
+    image: '/images/products/plow-bolt.svg',
+  },
+];
+
+// Expanded Product Line
+const expandedProducts = [
+  {
+    href: '/products/bucket-teeth',
+    label: 'Bucket Teeth',
+    description: 'Wear parts for excavators, loaders & dredging equipment',
+    specifications: 'Alloy Steel Castings | HRC 48-52 | Custom Profiles',
+    applications: 'Global OEM Replacement Parts',
+    image: '/images/products/bucket-teeth.svg',
+  },
+];
+
+export default function ProductsPage() {
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-6">
-            Our Products
-          </h1>
-          <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-            Professional industrial fasteners and construction machinery parts designed for global markets with over 15 years of manufacturing excellence.
-          </p>
+    <>
+      <ProductsStructuredData />
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <header className="mb-10 rounded-3xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 px-8 py-10 text-white shadow-lg">
+        <p className="text-sm uppercase tracking-wide text-blue-50/80">AzuLong Products</p>
+        <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Product Catalog</h1>
+      </header>
+
+      {/* Featured Products from Photos */}
+      <section className="mb-16">
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold text-slate-900 mb-2">Featured Products</h2>
+          <p className="text-slate-600">Showcase built from our in-house product photography.</p>
         </div>
 
-        {/* Product Categories */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-neutral-900 text-center mb-12">
-            Product Categories
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            {/* Track Bolt & Plow Bolt */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-w-16 aspect-h-12">
+        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {featuredProducts.map((product) => (
+            <div
+              key={product.sku}
+              className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="mb-3 overflow-hidden rounded-lg bg-slate-50">
                 <Image
-                  src="/plow-bolt.jpg"
-                  alt="Track Bolt and Plow Bolt"
-                  width={600}
-                  height={400}
-                  className="w-full h-64 object-cover"
+                  src={`/images/products/${product.image}`}
+                  alt={product.name}
+                  width={110}
+                  height={110}
+                  className="w-full h-28 object-contain p-2"
                 />
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
-                  Track Bolt & Plow Bolt
-                </h3>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  High-strength track bolts and plow bolts engineered for heavy-duty construction and agricultural machinery.
-                  Built to withstand extreme conditions and provide reliable performance in demanding applications.
-                </p>
 
-                <div className="mb-6">
-                  <h4 className="text-lg font-medium text-neutral-900 mb-3">Key Features:</h4>
-                  <ul className="space-y-2 text-neutral-600">
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      High tensile strength steel construction
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Corrosion resistant coating
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Precision threading and tolerances
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Multiple size specifications available
-                    </li>
-                  </ul>
+              <div className="space-y-2">
+                <div>
+                  <h3 className="text-sm font-semibold text-slate-900">{product.name}</h3>
+                  <p className="text-xs text-blue-600 font-medium">{product.sku}</p>
                 </div>
 
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <p className="text-sm text-blue-800">
-                    <strong>Applications:</strong> Excavators, bulldozers, agricultural equipment, track systems, and heavy machinery
-                  </p>
+                <div className="text-xs text-slate-600">
+                  <div><span className="font-medium">Diameter:</span> {product.diameter}</div>
+                  <div><span className="font-medium">Length:</span> {product.length}</div>
                 </div>
+
               </div>
             </div>
+          ))}
+        </div>
+      </section>
 
-            {/* Bucket Teeth */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-w-16 aspect-h-12 bg-gradient-to-br from-gray-100 to-gray-200">
-                <div className="flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="text-6xl mb-4">🚜</div>
-                    <p className="text-gray-600">Professional bucket teeth solutions</p>
+      {/* Core Bolt Products - Main Business */}
+      <section className="mb-12">
+        <div className="mb-8 flex items-center justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-2">Industrial Bolt Solutions</h2>
+            <p className="text-slate-600">
+              Our core expertise: systematic replacement fasteners for US and Japanese OEM equipment.
+            </p>
+          </div>
+          <div className="hidden md:block px-4 py-2 bg-blue-100 rounded-full">
+            <span className="text-sm font-medium text-blue-800">130+ Part Numbers</span>
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {boltProducts.map((product) => (
+            <Link
+              key={product.href}
+              href={product.href}
+              className="group rounded-2xl border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-white p-8 shadow-lg transition hover:border-blue-200 hover:shadow-xl"
+            >
+              <div className="flex items-start gap-6">
+                <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white shadow-md group-hover:shadow-lg">
+                  <Image
+                    src={product.image}
+                    alt={product.label}
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700">
+                    {product.label}
+                  </h3>
+                  <p className="text-slate-600 text-sm mb-3 leading-relaxed">
+                    {product.description}
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center text-xs">
+                      <span className="font-medium text-slate-700 w-20">Specs:</span>
+                      <span className="text-slate-600">{product.specifications}</span>
+                    </div>
+                    <div className="flex items-center text-xs">
+                      <span className="font-medium text-slate-700 w-20">OEM:</span>
+                      <span className="text-slate-600">{product.applications}</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 inline-flex items-center text-xs font-medium text-blue-600 group-hover:text-blue-700">
+                    View product catalog
                   </div>
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
-                  Bucket Teeth
-                </h3>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  Durable bucket teeth designed for excavators and earth-moving equipment.
-                  Manufactured with premium materials to ensure maximum wear resistance and operational efficiency.
-                </p>
-
-                <div className="mb-6">
-                  <h4 className="text-lg font-medium text-neutral-900 mb-3">Key Features:</h4>
-                  <ul className="space-y-2 text-neutral-600">
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Heat-treated alloy steel
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Superior wear resistance
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Easy installation and replacement
-                    </li>
-                    <li className="flex items-center">
-                      <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      Compatible with major brands
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <p className="text-sm text-blue-800">
-                    <strong>Applications:</strong> Excavator buckets, loader attachments, mining equipment, and earthmoving machinery
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
+      </section>
 
-        {/* Company Stats */}
-        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 mb-16">
-          <h3 className="text-2xl font-semibold text-neutral-900 text-center mb-8">
-            Our Manufacturing Excellence
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">1000+</div>
-              <div className="text-sm text-neutral-600">Product Types</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">15+</div>
-              <div className="text-sm text-neutral-600">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">50+</div>
-              <div className="text-sm text-neutral-600">Countries Served</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">ISO</div>
-              <div className="text-sm text-neutral-600">Certified</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Quality Assurance */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-neutral-900 text-center mb-12">
-            Quality Assurance
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                Material Testing
-              </h3>
-              <p className="text-neutral-600">
-                Rigorous material testing ensures every product meets international quality standards and specifications.
-              </p>
-            </div>
-
-            <div className="text-center p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                Precision Manufacturing
-              </h3>
-              <p className="text-neutral-600">
-                Advanced manufacturing processes and precision machinery ensure consistent quality and dimensional accuracy.
-              </p>
-            </div>
-
-            <div className="text-center p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                Customer Support
-              </h3>
-              <p className="text-neutral-600">
-                Comprehensive after-sales support with technical assistance and quality guarantee for complete peace of mind.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl py-12 px-8 text-white">
-          <h2 className="text-2xl font-semibold mb-4">
-            Ready to Source Quality Parts?
-          </h2>
-          <p className="text-blue-50 mb-6 max-w-2xl mx-auto">
-            Contact us today to discuss your requirements and discover how our premium industrial fasteners can enhance your operations.
+      {/* Expanded Product Line */}
+      <section className="mb-12">
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold text-slate-900 mb-2">Expanded Product Line</h3>
+          <p className="text-slate-600 text-sm">
+            Leveraging the Ningbo export hub to support a broader range of industrial requirements.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors"
-          >
-            Get Quote Today
-          </Link>
+        </div>
+
+        <div className="grid gap-6">
+          {expandedProducts.map((product) => (
+            <Link
+              key={product.href}
+              href={product.href}
+              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+            >
+              <div className="flex items-start gap-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-slate-50 group-hover:bg-slate-100">
+                  <Image
+                    src={product.image}
+                    alt={product.label}
+                    width={24}
+                    height={24}
+                    className="h-6 w-6 object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-slate-700">
+                    {product.label}
+                  </h4>
+                  <p className="text-slate-600 text-sm mb-3">
+                    {product.description}
+                  </p>
+                  <div className="space-y-1">
+                    <div className="flex items-center text-xs">
+                      <span className="font-medium text-slate-700 w-20">Specs:</span>
+                      <span className="text-slate-600">{product.specifications}</span>
+                    </div>
+                    <div className="flex items-center text-xs">
+                      <span className="font-medium text-slate-700 w-20">Markets:</span>
+                      <span className="text-slate-600">{product.applications}</span>
+                    </div>
+                  </div>
+                  <div className="mt-3 inline-flex items-center text-xs font-medium text-slate-600 group-hover:text-slate-700">
+                    Explore product details
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Professional Capabilities */}
+      <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 mt-16">
+        <h3 className="text-2xl font-semibold text-slate-900 text-center mb-8">
+          Professional Fastener Manufacturing
+        </h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">130+</div>
+            <div className="text-sm text-slate-600">Cataloged part numbers</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">1/2&quot;-1&quot;</div>
+            <div className="text-sm text-slate-600">Diameter range (imperial)</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">15+</div>
+            <div className="text-sm text-slate-600">Years of OEM experience</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">Small batch</div>
+            <div className="text-sm text-slate-600">Flexible order quantities</div>
+          </div>
+        </div>
+
+        {/* B2B Value Props */}
+        <div className="mt-8 grid md:grid-cols-3 gap-4 text-center">
+          <div className="bg-white/60 rounded-lg p-4">
+            <div className="text-sm font-medium text-slate-900 mb-1">Replacement specialists</div>
+            <div className="text-xs text-slate-600">Compatible with US & Japanese OEMs</div>
+          </div>
+          <div className="bg-white/60 rounded-lg p-4">
+            <div className="text-sm font-medium text-slate-900 mb-1">Structured catalog</div>
+            <div className="text-xs text-slate-600">Diameter x length = part number</div>
+          </div>
+          <div className="bg-white/60 rounded-lg p-4">
+            <div className="text-sm font-medium text-slate-900 mb-1">Global logistics</div>
+            <div className="text-xs text-slate-600">Ningbo port advantage + agile shipping</div>
+          </div>
         </div>
       </div>
     </div>
-  )
+    </>
+  );
 }

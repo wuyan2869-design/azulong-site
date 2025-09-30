@@ -96,7 +96,7 @@ export default function Footer() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                   <div>
-                    <p className="text-gray-300 text-sm">sales@azulongparts.com</p>
+                    <p className="text-gray-300 text-sm">wuyan2869@gmail.com</p>
                     <p className="text-gray-400 text-xs">Business Inquiries</p>
                   </div>
                 </div>
@@ -105,8 +105,8 @@ export default function Footer() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                   <div>
-                    <p className="text-gray-300 text-sm">+86 574 xxxx xxxx</p>
-                    <p className="text-gray-400 text-xs">Global B2B Support</p>
+                    <p className="text-gray-300 text-sm">+86 13777046128</p>
+                    <p className="text-gray-400 text-xs">WhatsApp Only (No Calls)</p>
                   </div>
                 </div>
               </div>

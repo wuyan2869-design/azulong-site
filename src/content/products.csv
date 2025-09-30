@@ -1,0 +1,22 @@
+family,sku,category,standard,oem_refs,diameter_in,length_in,thread,grade,material,finish,weight_kg,min_order,pack,image
+track-bolt,TB-3/8-3,Track Bolt,ASTM-A307,"CAT-123456,JD-789",0.375,3,UNC,A307,Carbon Steel,Zinc Plated,0.15,100,100,track-bolt.svg
+track-bolt,TB-1/2-4,Track Bolt,ASTM-A307,"CAT-234567,KOM-456",0.5,4,UNC,A307,Carbon Steel,Zinc Plated,0.28,50,50,track-bolt.svg
+track-bolt,TB-5/8-5,Track Bolt,ASTM-A307,"CAT-345678,VOL-789",0.625,5,UNC,A307,Carbon Steel,Hot Dip Galv,0.48,50,50,track-bolt.svg
+track-bolt,TB-3/4-6,Track Bolt,ASTM-A490,"CAT-456789,JD-012",0.75,6,UNC,A490,Alloy Steel,Black Oxide,0.78,25,25,track-bolt.svg
+track-bolt,TB-7/8-7,Track Bolt,ASTM-A490,"KOM-567890,CAT-123",0.875,7,UNC,A490,Alloy Steel,Zinc Plated,1.15,25,25,track-bolt.svg
+track-bolt,TB-1-8,Track Bolt,ASTM-A490,"VOL-678901,JD-234",1,8,UNC,A490,Alloy Steel,Hot Dip Galv,1.58,25,25,track-bolt.svg
+plow-bolt,PB-1/4-1.5,Plow Bolt,ASTM-A307,"JD-345678,CAT-456",0.25,1.5,UNC,A307,Carbon Steel,Zinc Plated,0.08,200,200,plow-bolt.svg
+plow-bolt,PB-5/16-2,Plow Bolt,ASTM-A307,"KOM-456789,VOL-567",0.3125,2,UNC,A307,Carbon Steel,Zinc Plated,0.12,200,200,plow-bolt.svg
+plow-bolt,PB-3/8-2.5,Plow Bolt,ASTM-A307,"CAT-567890,JD-678",0.375,2.5,UNC,A307,Carbon Steel,Hot Dip Galv,0.18,100,100,plow-bolt.svg
+plow-bolt,PB-1/2-3,Plow Bolt,ASTM-A307,"VOL-678901,KOM-789",0.5,3,UNC,A307,Carbon Steel,Zinc Plated,0.32,100,100,plow-bolt.svg
+plow-bolt,PB-5/8-3.5,Plow Bolt,ASTM-A449,"JD-789012,CAT-890",0.625,3.5,UNC,A449,Alloy Steel,Black Oxide,0.52,50,50,plow-bolt.svg
+plow-bolt,PB-3/4-4,Plow Bolt,ASTM-A449,"KOM-890123,VOL-901",0.75,4,UNC,A449,Alloy Steel,Zinc Plated,0.78,50,50,plow-bolt.svg
+plow-bolt,PB-7/8-4.5,Plow Bolt,ASTM-A449,"CAT-901234,JD-012",0.875,4.5,UNC,A449,Alloy Steel,Hot Dip Galv,1.08,50,50,plow-bolt.svg
+bucket-teeth,BT-J200-STD,Bucket Teeth,Proprietary,"CAT-J200,KOM-PC200",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,2.5,10,10,bucket-teeth.svg
+bucket-teeth,BT-J300-HD,Bucket Teeth,Proprietary,"CAT-J300,VOL-EC210",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,3.2,10,10,bucket-teeth.svg
+bucket-teeth,BT-J400-RC,Bucket Teeth,Proprietary,"CAT-J400,JD-310G",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,3.8,5,5,bucket-teeth.svg
+bucket-teeth,BT-J500-XHD,Bucket Teeth,Proprietary,"CAT-J500,KOM-PC360",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,4.5,5,5,bucket-teeth.svg
+bucket-teeth,BT-230-STD,Bucket Teeth,Proprietary,"CAT-230,VOL-EC240",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,5.2,5,5,bucket-teeth.svg
+bucket-teeth,BT-320-HD,Bucket Teeth,Proprietary,"CAT-320,JD-350G",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,6.8,5,5,bucket-teeth.svg
+bucket-teeth,BT-330-XHD,Bucket Teeth,Proprietary,"CAT-330,KOM-PC400",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,8.5,5,5,bucket-teeth.svg
+bucket-teeth,BT-345-XXL,Bucket Teeth,Proprietary,"CAT-345,VOL-EC480",N/A,N/A,N/A,Proprietary,Alloy Steel,Heat Treated,12.3,1,1,bucket-teeth.svg

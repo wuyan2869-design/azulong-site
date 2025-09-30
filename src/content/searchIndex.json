@@ -1,0 +1,510 @@
+{
+  "products": [
+    {
+      "family": "track-bolt",
+      "sku": "TB-3/8-3",
+      "category": "Track Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "CAT-123456,JD-789",
+      "diameter_in": 0.375,
+      "length_in": 3,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.15,
+      "min_order": 100,
+      "pack": 100,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-1/2-4",
+      "category": "Track Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "CAT-234567,KOM-456",
+      "diameter_in": 0.5,
+      "length_in": 4,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.28,
+      "min_order": 50,
+      "pack": 50,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-5/8-5",
+      "category": "Track Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "CAT-345678,VOL-789",
+      "diameter_in": 0.625,
+      "length_in": 5,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Hot Dip Galv",
+      "weight_kg": 0.48,
+      "min_order": 50,
+      "pack": 50,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-3/4-6",
+      "category": "Track Bolt",
+      "standard": "ASTM-A490",
+      "oem_refs": "CAT-456789,JD-012",
+      "diameter_in": 0.75,
+      "length_in": 6,
+      "thread": "UNC",
+      "grade": "A490",
+      "material": "Alloy Steel",
+      "finish": "Black Oxide",
+      "weight_kg": 0.78,
+      "min_order": 25,
+      "pack": 25,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-7/8-7",
+      "category": "Track Bolt",
+      "standard": "ASTM-A490",
+      "oem_refs": "KOM-567890,CAT-123",
+      "diameter_in": 0.875,
+      "length_in": 7,
+      "thread": "UNC",
+      "grade": "A490",
+      "material": "Alloy Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 1.15,
+      "min_order": 25,
+      "pack": 25,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-1-8",
+      "category": "Track Bolt",
+      "standard": "ASTM-A490",
+      "oem_refs": "VOL-678901,JD-234",
+      "diameter_in": 1,
+      "length_in": 8,
+      "thread": "UNC",
+      "grade": "A490",
+      "material": "Alloy Steel",
+      "finish": "Hot Dip Galv",
+      "weight_kg": 1.58,
+      "min_order": 25,
+      "pack": 25,
+      "image": "track-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-1/4-1.5",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "JD-345678,CAT-456",
+      "diameter_in": 0.25,
+      "length_in": 1.5,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.08,
+      "min_order": 200,
+      "pack": 200,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-5/16-2",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "KOM-456789,VOL-567",
+      "diameter_in": 0.3125,
+      "length_in": 2,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.12,
+      "min_order": 200,
+      "pack": 200,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-3/8-2.5",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "CAT-567890,JD-678",
+      "diameter_in": 0.375,
+      "length_in": 2.5,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Hot Dip Galv",
+      "weight_kg": 0.18,
+      "min_order": 100,
+      "pack": 100,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-1/2-3",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A307",
+      "oem_refs": "VOL-678901,KOM-789",
+      "diameter_in": 0.5,
+      "length_in": 3,
+      "thread": "UNC",
+      "grade": "A307",
+      "material": "Carbon Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.32,
+      "min_order": 100,
+      "pack": 100,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-5/8-3.5",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A449",
+      "oem_refs": "JD-789012,CAT-890",
+      "diameter_in": 0.625,
+      "length_in": 3.5,
+      "thread": "UNC",
+      "grade": "A449",
+      "material": "Alloy Steel",
+      "finish": "Black Oxide",
+      "weight_kg": 0.52,
+      "min_order": 50,
+      "pack": 50,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-3/4-4",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A449",
+      "oem_refs": "KOM-890123,VOL-901",
+      "diameter_in": 0.75,
+      "length_in": 4,
+      "thread": "UNC",
+      "grade": "A449",
+      "material": "Alloy Steel",
+      "finish": "Zinc Plated",
+      "weight_kg": 0.78,
+      "min_order": 50,
+      "pack": 50,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-7/8-4.5",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A449",
+      "oem_refs": "CAT-901234,JD-012",
+      "diameter_in": 0.875,
+      "length_in": 4.5,
+      "thread": "UNC",
+      "grade": "A449",
+      "material": "Alloy Steel",
+      "finish": "Hot Dip Galv",
+      "weight_kg": 1.08,
+      "min_order": 50,
+      "pack": 50,
+      "image": "plow-bolt.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-J200-STD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-J200,KOM-PC200",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 2.5,
+      "min_order": 10,
+      "pack": 10,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-J300-HD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-J300,VOL-EC210",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 3.2,
+      "min_order": 10,
+      "pack": 10,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-J400-RC",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-J400,JD-310G",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 3.8,
+      "min_order": 5,
+      "pack": 5,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-J500-XHD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-J500,KOM-PC360",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 4.5,
+      "min_order": 5,
+      "pack": 5,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-230-STD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-230,VOL-EC240",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 5.2,
+      "min_order": 5,
+      "pack": 5,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-320-HD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-320,JD-350G",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 6.8,
+      "min_order": 5,
+      "pack": 5,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-330-XHD",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-330,KOM-PC400",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 8.5,
+      "min_order": 5,
+      "pack": 5,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "bucket-teeth",
+      "sku": "BT-345-XXL",
+      "category": "Bucket Teeth",
+      "standard": "Proprietary",
+      "oem_refs": "CAT-345,VOL-EC480",
+      "diameter_in": null,
+      "length_in": null,
+      "thread": null,
+      "grade": "Proprietary",
+      "material": "Alloy Steel",
+      "finish": "Heat Treated",
+      "weight_kg": 12.3,
+      "min_order": 1,
+      "pack": 1,
+      "image": "bucket-teeth.svg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-3/4-4-CATALOG",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A449",
+      "oem_refs": "BOSS-890,WESTERN-901,CAT-PB34",
+      "diameter_in": 0.75,
+      "length_in": 4,
+      "thread": "UNC",
+      "grade": "A449",
+      "material": "Alloy Steel",
+      "finish": "Black Oxide",
+      "weight_kg": 0.85,
+      "min_order": 50,
+      "pack": 50,
+      "image": "plow-bolt-3-4.jpg"
+    },
+    {
+      "family": "plow-bolt",
+      "sku": "PB-5/8-6-CATALOG",
+      "category": "Plow Bolt",
+      "standard": "ASTM-A449",
+      "oem_refs": "BOSS-567,WESTERN-678,FISHER-789",
+      "diameter_in": 0.625,
+      "length_in": 6,
+      "thread": "UNC",
+      "grade": "A449",
+      "material": "Alloy Steel",
+      "finish": "Black Oxide",
+      "weight_kg": 0.68,
+      "min_order": 50,
+      "pack": 50,
+      "image": "plow-bolt-5-8.jpg"
+    },
+    {
+      "family": "track-bolt",
+      "sku": "TB-1-6-CATALOG",
+      "category": "Track Bolt",
+      "standard": "ASTM-A490",
+      "oem_refs": "CAT-TB100,KOM-PC300,JD-350G",
+      "diameter_in": 1,
+      "length_in": 6,
+      "thread": "UNC",
+      "grade": "A490",
+      "material": "Alloy Steel",
+      "finish": "Black Oxide",
+      "weight_kg": 1.45,
+      "min_order": 25,
+      "pack": 25,
+      "image": "track-bolt-1inch.jpg"
+    }
+  ],
+  "searchableText": [
+    {
+      "sku": "TB-3/8-3",
+      "text": "tb-3/8-3 track bolt astm-a307 cat-123456,jd-789 carbon steel zinc plated a307 track-bolt"
+    },
+    {
+      "sku": "TB-1/2-4",
+      "text": "tb-1/2-4 track bolt astm-a307 cat-234567,kom-456 carbon steel zinc plated a307 track-bolt"
+    },
+    {
+      "sku": "TB-5/8-5",
+      "text": "tb-5/8-5 track bolt astm-a307 cat-345678,vol-789 carbon steel hot dip galv a307 track-bolt"
+    },
+    {
+      "sku": "TB-3/4-6",
+      "text": "tb-3/4-6 track bolt astm-a490 cat-456789,jd-012 alloy steel black oxide a490 track-bolt"
+    },
+    {
+      "sku": "TB-7/8-7",
+      "text": "tb-7/8-7 track bolt astm-a490 kom-567890,cat-123 alloy steel zinc plated a490 track-bolt"
+    },
+    {
+      "sku": "TB-1-8",
+      "text": "tb-1-8 track bolt astm-a490 vol-678901,jd-234 alloy steel hot dip galv a490 track-bolt"
+    },
+    {
+      "sku": "PB-1/4-1.5",
+      "text": "pb-1/4-1.5 plow bolt astm-a307 jd-345678,cat-456 carbon steel zinc plated a307 plow-bolt"
+    },
+    {
+      "sku": "PB-5/16-2",
+      "text": "pb-5/16-2 plow bolt astm-a307 kom-456789,vol-567 carbon steel zinc plated a307 plow-bolt"
+    },
+    {
+      "sku": "PB-3/8-2.5",
+      "text": "pb-3/8-2.5 plow bolt astm-a307 cat-567890,jd-678 carbon steel hot dip galv a307 plow-bolt"
+    },
+    {
+      "sku": "PB-1/2-3",
+      "text": "pb-1/2-3 plow bolt astm-a307 vol-678901,kom-789 carbon steel zinc plated a307 plow-bolt"
+    },
+    {
+      "sku": "PB-5/8-3.5",
+      "text": "pb-5/8-3.5 plow bolt astm-a449 jd-789012,cat-890 alloy steel black oxide a449 plow-bolt"
+    },
+    {
+      "sku": "PB-3/4-4",
+      "text": "pb-3/4-4 plow bolt astm-a449 kom-890123,vol-901 alloy steel zinc plated a449 plow-bolt"
+    },
+    {
+      "sku": "PB-7/8-4.5",
+      "text": "pb-7/8-4.5 plow bolt astm-a449 cat-901234,jd-012 alloy steel hot dip galv a449 plow-bolt"
+    },
+    {
+      "sku": "BT-J200-STD",
+      "text": "bt-j200-std bucket teeth proprietary cat-j200,kom-pc200 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-J300-HD",
+      "text": "bt-j300-hd bucket teeth proprietary cat-j300,vol-ec210 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-J400-RC",
+      "text": "bt-j400-rc bucket teeth proprietary cat-j400,jd-310g alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-J500-XHD",
+      "text": "bt-j500-xhd bucket teeth proprietary cat-j500,kom-pc360 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-230-STD",
+      "text": "bt-230-std bucket teeth proprietary cat-230,vol-ec240 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-320-HD",
+      "text": "bt-320-hd bucket teeth proprietary cat-320,jd-350g alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-330-XHD",
+      "text": "bt-330-xhd bucket teeth proprietary cat-330,kom-pc400 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "BT-345-XXL",
+      "text": "bt-345-xxl bucket teeth proprietary cat-345,vol-ec480 alloy steel heat treated proprietary bucket-teeth"
+    },
+    {
+      "sku": "PB-3/4-4-CATALOG",
+      "text": "pb-3/4-4-catalog plow bolt astm-a449 boss-890,western-901,cat-pb34 alloy steel black oxide a449 plow-bolt 3/4 4"
+    },
+    {
+      "sku": "PB-5/8-6-CATALOG",
+      "text": "pb-5/8-6-catalog plow bolt astm-a449 boss-567,western-678,fisher-789 alloy steel black oxide a449 plow-bolt 5/8 6"
+    },
+    {
+      "sku": "TB-1-6-CATALOG",
+      "text": "tb-1-6-catalog track bolt astm-a490 cat-tb100,kom-pc300,jd-350g alloy steel black oxide a490 track-bolt 1 inch 6"
+    }
+  ]
+}

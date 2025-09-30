@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Track base -->
+  <ellipse cx="50" cy="100" rx="35" ry="12" fill="currentColor" opacity="0.8"/>
+  <ellipse cx="130" cy="100" rx="25" ry="10" fill="currentColor" opacity="0.8"/>
+
+  <!-- Main body -->
+  <rect x="40" y="70" width="60" height="30" rx="5" fill="currentColor" opacity="0.9"/>
+
+  <!-- Cab -->
+  <rect x="70" y="55" width="25" height="20" rx="3" fill="currentColor"/>
+
+  <!-- Boom (main arm) -->
+  <rect x="45" y="65" width="35" height="6" rx="3" fill="currentColor" transform="rotate(-15 62 68)"/>
+
+  <!-- Stick (secondary arm) -->
+  <rect x="70" y="45" width="30" height="5" rx="2.5" fill="currentColor" transform="rotate(-35 85 47)"/>
+
+  <!-- Bucket -->
+  <path d="M85 35 L95 30 L100 40 L90 45 Z" fill="currentColor"/>
+
+  <!-- Counterweight -->
+  <rect x="20" y="75" width="25" height="15" rx="3" fill="currentColor" opacity="0.7"/>
+
+  <!-- Track details -->
+  <circle cx="35" cy="100" r="3" fill="currentColor" opacity="0.6"/>
+  <circle cx="50" cy="100" r="3" fill="currentColor" opacity="0.6"/>
+  <circle cx="65" cy="100" r="3" fill="currentColor" opacity="0.6"/>
+  <circle cx="120" cy="100" r="3" fill="currentColor" opacity="0.6"/>
+  <circle cx="140" cy="100" r="3" fill="currentColor" opacity="0.6"/>
+</svg>

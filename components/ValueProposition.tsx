@@ -27,11 +27,8 @@ export default function ValueProposition() {
     {
       icon: ShieldIcon,
       title: "Premium Quality",
-      titleCn: "卓越品质",
       description: "ISO 9001:2015 certified manufacturing processes ensure every fastener meets international standards. Rigorous quality control at every production stage.",
-      descriptionCn: "ISO 9001:2015 认证生产流程，确保每颗紧固件符合国际标准。生产各环节严格质量控制。",
       metric: "99.8% Quality Pass Rate",
-      metricCn: "99.8% 质量合格率",
       bgGradient: "from-green-50 to-emerald-50",
       iconColor: "text-green-600",
       borderColor: "border-green-200"
@@ -39,11 +36,8 @@ export default function ValueProposition() {
     {
       icon: TagIcon,
       title: "Cost Advantage",
-      titleCn: "成本优势",
       description: "Direct manufacturer pricing with no middleman markup. Competitive rates while maintaining premium quality standards for bulk orders.",
-      descriptionCn: "工厂直销价格，无中间商加价。批量订单在保持优质标准的同时提供具有竞争力的价格。",
       metric: "Up to 30% Cost Savings",
-      metricCn: "节省成本高达 30%",
       bgGradient: "from-blue-50 to-cyan-50",
       iconColor: "text-[#0F67FE]",
       borderColor: "border-blue-200"
@@ -51,11 +45,8 @@ export default function ValueProposition() {
     {
       icon: ClockIcon,
       title: "On-time Service",
-      titleCn: "准时服务",
       description: "Reliable delivery schedules with real-time tracking. Dedicated customer support team available for technical consultation and after-sales service.",
-      descriptionCn: "可靠的交付时间表与实时跟踪。专业客服团队提供技术咨询和售后服务支持。",
       metric: "95% On-time Delivery Rate",
-      metricCn: "95% 准时交付率",
       bgGradient: "from-purple-50 to-indigo-50",
       iconColor: "text-purple-600",
       borderColor: "border-purple-200"

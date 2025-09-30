@@ -1,36 +1,44 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const baseUrl = 'https://azulongparts.com';
+
+  // Static pages
+  const staticPages = [
     {
-      url: 'https://azulongparts.com',
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily' as const,
       priority: 1,
     },
     {
-      url: 'https://azulongparts.com/about',
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: 'https://azulongparts.com/products',
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: 'https://azulongparts.com/services',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://azulongparts.com/contact',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
-  ]
+    {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+  ];
+
+  // Product family pages
+  const families = ['track-bolt', 'plow-bolt', 'bucket-teeth'];
+  const productPages = families.map((family: string) => ({
+    url: `${baseUrl}/products/${family}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...productPages];
 }

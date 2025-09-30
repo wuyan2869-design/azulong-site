@@ -22,9 +22,9 @@ export default function Hero() {
             {/* Gradient Definitions */}
             <defs>
               <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="#1E40AF" />
-                <stop offset="50%" stopColor="#0F67FE" />
-                <stop offset="100%" stopColor="#0EA5E9" />
+                <stop offset="0%" stopColor="#60A5FA" />
+                <stop offset="50%" stopColor="#3B82F6" />
+                <stop offset="100%" stopColor="#2563EB" />
               </linearGradient>
               <linearGradient id="steelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#64748B" />
@@ -254,15 +254,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-            <Link
-              href="/products"
-              className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#0F67FE] rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
-            >
-              <span className="relative z-10">View Products</span>
-              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Link>
-
+          <div className="flex justify-center items-center pt-8">
             <Link
               href="/contact"
               className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm"

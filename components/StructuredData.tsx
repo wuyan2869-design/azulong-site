@@ -9,11 +9,13 @@ export default function StructuredData() {
     "name": "AzuLong Industrial Fasteners",
     "url": "https://azulongparts.com",
     "logo": "https://azulongparts.com/images/logo.png",
-    "description": "Professional manufacturer of industrial fasteners with 15+ years experience. ISO 9001:2015 certified quality, serving USA, Singapore and global markets.",
+    "description": "Leading manufacturer of excavator track bolts, plow bolts, and bucket teeth for North American construction equipment market. ISO 9001:2015 certified with 15+ years manufacturing experience.",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Room 1909, Taikang Building, Southern Business District",
       "addressLocality": "Ningbo",
       "addressRegion": "Zhejiang",
+      "postalCode": "315000",
       "addressCountry": "CN"
     },
     "contactPoint": {
@@ -29,11 +31,32 @@ export default function StructuredData() {
     "numberOfEmployees": "50-100",
     "industry": "Manufacturing",
     "knowsAbout": [
-      "Industrial Fasteners",
-      "Construction Machinery Parts",
-      "Excavator Fasteners",
+      "Excavator Track Bolts",
+      "Plow Bolts",
+      "Bucket Teeth",
+      "Construction Equipment Fasteners",
       "Undercarriage Parts",
+      "Heavy Equipment Fasteners",
+      "OEM Fasteners",
+      "Aftermarket Excavator Parts",
       "ISO 9001:2015 Quality Control"
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "29.8683",
+      "longitude": "121.5440"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Excavator Track Bolts",
+          "category": "Construction Equipment Parts"
+        },
+        "eligibleRegion": "US",
+        "availability": "https://schema.org/InStock"
+      }
     ]
   };
 

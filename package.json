@@ -6,12 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:products": "ts-node src/lib/build-products.ts"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "@types/papaparse": "^5.3.16",
     "next": "15.5.3",
+    "papaparse": "^5.5.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "ts-node": "^10.9.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+<path d="M50 80 L150 80 L170 100 L150 120 L50 120 Z" fill="#6c757d"/>
+<circle cx="60" cy="100" r="12" fill="#495057"/>
+<circle cx="60" cy="100" r="6" fill="#fff"/>
+<rect x="140" y="90" width="20" height="20" fill="#495057"/>
+<rect x="145" y="95" width="10" height="10" fill="#fff"/>
+<text x="100" y="140" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="12">Plow Bolt</text>
+<text x="100" y="155" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="10">犁形螺栓</text>
+</svg>
