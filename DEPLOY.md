@@ -10,7 +10,7 @@
 - 网站上线前优化完成
 - SEO、性能、联系信息已更新
 - 所有构建测试通过
-- 联系信息：wuyan2869@gmail.com
+- 联系信息：rocky@azulong.com
 - 手机号：+86 13777046128 (WhatsApp Only)
 
 ## 部署历史

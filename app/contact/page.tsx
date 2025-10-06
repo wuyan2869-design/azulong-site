@@ -33,8 +33,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-                  <a href="mailto:wuyan2869@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
-                    wuyan2869@gmail.com
+                  <a href="mailto:rocky@azulong.com" className="text-blue-600 hover:text-blue-700 transition-colors">
+                    rocky@azulong.com
                   </a>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function Contact() {
             Our experienced team is ready to provide you with professional solutions and competitive pricing.
           </p>
           <a
-            href="mailto:wuyan2869@gmail.com"
+            href="mailto:rocky@azulong.com"
             className="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors"
           >
             Send Email

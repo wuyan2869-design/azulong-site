@@ -35,7 +35,9 @@
       "Bash(rm:*)",
       "Bash(npm run start:*)",
       "Bash(set PORT=3001)",
-      "Bash(npx next start:*)"
+      "Bash(npx next start:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

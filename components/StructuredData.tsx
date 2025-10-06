@@ -22,7 +22,7 @@ export default function StructuredData() {
       "@type": "ContactPoint",
       "telephone": "+86-574-xxxx-xxxx",
       "contactType": "customer service",
-      "email": "sales@azulongparts.com"
+      "email": "rocky@azulong.com"
     },
     "sameAs": [
       "https://linkedin.com/company/azulongparts"

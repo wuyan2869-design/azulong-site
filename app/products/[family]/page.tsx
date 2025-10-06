@@ -566,7 +566,7 @@ Loading product data...
             deliverable SKUs, with nuts, washers and surface treatments available as needed.
           </p>
           <a
-            href="mailto:sales@azulongparts.com?subject=Product%20Inquiry"
+            href="mailto:rocky@azulong.com?subject=Product%20Inquiry"
             className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Get Quote & Samples
