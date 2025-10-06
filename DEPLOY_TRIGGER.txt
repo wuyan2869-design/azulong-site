@@ -1,0 +1,5 @@
+Deployment triggered at: 2025-10-06 15:14:00
+Latest updates:
+- Email updated to rocky@azulong.com
+- Domain updated to azulong.com
+- Version: 0.1.2
