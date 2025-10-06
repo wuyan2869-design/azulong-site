@@ -72,7 +72,7 @@ const FALLBACK_META: ProductFamilyMeta = {
 };
 
 const BASE_TITLE = 'AzuLong Industrial Fasteners';
-const BASE_URL = 'https://azulongparts.com';
+const BASE_URL = 'https://azulong.com';
 
 export async function generateMetadata({
   params,

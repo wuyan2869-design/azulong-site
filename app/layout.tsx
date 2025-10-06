@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://azulongparts.com'),
+  metadataBase: new URL('https://azulong.com'),
   title: "AzuLong Industrial Fasteners - Premium Excavator Parts & Track Bolts for US Market",
   description: "Leading supplier of excavator track bolts, plow bolts & bucket teeth to North America. ISO 9001:2015 certified manufacturer with 15+ years experience. Competitive pricing, reliable delivery, excellent after-sales support for construction equipment OEMs and distributors.",
   keywords: "excavator track bolts, plow bolts, bucket teeth, construction equipment fasteners, undercarriage parts, industrial fasteners USA, excavator parts supplier, track bolt manufacturer, heavy equipment fasteners, construction machinery parts, OEM fasteners, aftermarket excavator parts",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://azulongparts.com",
+    url: "https://azulong.com",
     siteName: "AzuLong Industrial Fasteners",
     title: "Premium Excavator Track Bolts & Parts - AzuLong Industrial Fasteners",
     description: "Trusted by North American construction equipment distributors. Premium excavator track bolts, plow bolts & bucket teeth. ISO 9001:2015 certified with 15+ years manufacturing experience.",

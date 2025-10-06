@@ -5,8 +5,8 @@ export default function ProductsStructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "AzuLong Industrial Fasteners",
-    "url": "https://azulongparts.com",
-    "logo": "https://azulongparts.com/images/logo.png",
+    "url": "https://azulong.com",
+    "logo": "https://azulong.com/images/logo.png",
     "description": "Leading manufacturer of excavator track bolts, plow bolts and bucket teeth for North American construction equipment market",
     "address": {
       "@type": "PostalAddress",

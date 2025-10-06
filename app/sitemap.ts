@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://azulongparts.com';
+  const baseUrl = 'https://azulong.com';
 
   // Static pages
   const staticPages = [

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/'],
     },
-    sitemap: 'https://azulongparts.com/sitemap.xml',
+    sitemap: 'https://azulong.com/sitemap.xml',
   }
 }

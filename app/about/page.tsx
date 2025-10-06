@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       height: 630,
       alt: 'AzuLong Manufacturing Facility'
     }],
-    url: 'https://azulongparts.com/about'
+    url: 'https://azulong.com/about'
   }
 }
 

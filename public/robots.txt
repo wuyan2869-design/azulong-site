@@ -18,7 +18,7 @@ Disallow: /_next/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://azulongparts.com/sitemap.xml
+Sitemap: https://azulong.com/sitemap.xml
 
 # Crawl delay for politeness (optional)
 Crawl-delay: 1

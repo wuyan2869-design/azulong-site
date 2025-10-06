@@ -7,8 +7,8 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "AzuLong Industrial Fasteners",
-    "url": "https://azulongparts.com",
-    "logo": "https://azulongparts.com/images/logo.png",
+    "url": "https://azulong.com",
+    "logo": "https://azulong.com/images/logo.png",
     "description": "Leading manufacturer of excavator track bolts, plow bolts, and bucket teeth for North American construction equipment market. ISO 9001:2015 certified with 15+ years manufacturing experience.",
     "address": {
       "@type": "PostalAddress",
