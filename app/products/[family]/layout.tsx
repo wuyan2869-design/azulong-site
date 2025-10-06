@@ -62,7 +62,7 @@ const FALLBACK_META: ProductFamilyMeta = {
   title: 'Industrial Fasteners',
   subtitle: 'ISO-certified fastening solutions tailored for global OEM supply chains.',
   description:
-    'Explore the AzuLong catalogue featuring precision fasteners, wear parts, and custom-engineered hardware for industrial applications.',
+    'Explore the AzuLong catalog featuring precision fasteners, wear parts, and custom-engineered hardware for industrial applications.',
   keywords: [
     'industrial fasteners',
     'OEM fasteners',
